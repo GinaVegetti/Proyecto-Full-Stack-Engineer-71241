@@ -1,0 +1,110 @@
+.presentacion-nosotros {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/lucha.2.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.presentacion-nosotros h2, .presentacion-nosotros h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.presentacion-nosotros h2 {
+    font-size: 2rem; 
+}
+
+.presentacion-nosotros h3 {
+    font-size: 1.25rem; 
+}
+
+
+.nosotros-p {
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+
+.nosotros-p h2 {
+    color: #acab9e;
+    font-size: 2.5rem; 
+    margin: 20px 0;
+}
+
+.nosotros-p div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.nosotros-p div img {
+    max-width: 350px; 
+    height: auto;
+    border-radius: 8px; 
+    margin: 10px 0;
+}
+
+.nosotros-p div p {
+    color: black;
+    font-size: 1rem; 
+    text-align: justify;
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.saludo-final {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.saludo-final h2 {
+    color: #333;
+    font-size: 2rem; 
+    margin-bottom: 10px;
+}
+
+.saludo-final p {
+    color: #555;
+    font-size: 1rem; 
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .presentacion-nosotros {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/nosotros3.jpg);
+        height: 200px;
+    }
+
+    .presentacion-nosotros h2 {
+        font-size: 1.25rem; 
+    }
+
+    .presentacion-nosotros h3 {
+        font-size: 1rem; 
+    }
+
+    .nosotros-p h2 {
+        font-size: 1.5rem; 
+    }
+
+    .nosotros-p div {
+        flex-direction: column;
+    }
+
+    .nosotros-p div p {
+        font-size: 0.875rem;
+    }
+}

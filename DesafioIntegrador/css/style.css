@@ -1,0 +1,336 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    background-color: #222;
+    color: rgb(172, 171, 158);
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 110px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    color: rgb(172, 171, 158);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    color: rgb(172, 171, 158);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav .search-form {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-form input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav .search-form button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: rgba(233, 230, 36, 0.966);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav .search-form button i {
+    margin-right: 5px;
+}
+
+nav .search-form button:hover {
+    background-color: rgba(233, 230, 36, 0.966);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.menu-icon div:nth-child(1) {
+    top: 0;
+}
+
+.menu-icon div:nth-child(2) {
+    top: 10px;
+}
+
+.menu-icon div:nth-child(3) {
+    top: 20px;
+}
+
+nav.active .menu-icon div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+nav.active .menu-icon div:nth-child(2) {
+    opacity: 0;
+}
+
+nav.active .menu-icon div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Estilos responsive del nav */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+        margin: 0px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+    }
+
+    nav .search-form {
+        width: 100%;
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.hero {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/lucha.jpg);
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+.hero h3 {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.productos {
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.targetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.targetas div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.targetas img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.targetas div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.targetas div:hover img {
+    transform: scale(1.05);
+}
+
+
+.buy-button {
+    background-color: rgba(233, 230, 36, 0.966);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.buy-button:hover {
+    background-color: rgba(206, 203, 38, 0.966);
+}
+
+/* Estilo para que las tarjetas sean responsive */
+
+@media (max-width: 768px) {
+    .targetas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+footer div {
+    margin: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+footer div a img {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+    footer div {
+        justify-content: center;
+    }
+
+    footer div a img {
+        width: 30px;
+        height: 30px;
+    }
+}

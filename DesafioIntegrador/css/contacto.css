@@ -1,0 +1,53 @@
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.contact-form button {
+    background-color: rgba(233, 230, 36, 0.966);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgba(206, 203, 38, 0.966);
+}
+
+/* Media Queries para que sea responsive*/
+@media (max-width: 600px) {
+
+.contact-form {
+    padding: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 6px;
+    margin-bottom: 8px;
+}
+}

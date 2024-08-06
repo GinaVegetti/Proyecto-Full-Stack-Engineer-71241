@@ -1,0 +1,54 @@
+
+form.alta-producto-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+
+form.alta-producto-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+form.alta-producto-form input,
+form.alta-producto-form textarea,
+form.alta-producto-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+
+form.alta-producto-form button {
+    background-color: rgba(233, 230, 36, 0.966);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+
+form.alta-producto-form button:hover {
+    background-color: rgba(206, 203, 38, 0.966);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    form.alta-producto-form {
+        padding: 15px;
+    }
+
+    form.alta-producto-form input,
+    form.alta-producto-form textarea,
+    form.alta-producto-form button {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ WEAR: Ropa y Equipamiento para Jiu-Jitsu</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/alta.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/icon.png" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/img/logo-inicio.png" alt="Logo de BJJ WEAR - Ropa y Equipamiento para Jiu-Jitsu"></a>
+                <h1>BJJWEAR</h1>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./alta.html">Alta de Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+            <form class="search-form">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <h2>Alta de Productos</h2>
+        <form class="alta-producto-form" id="alta-producto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required>
+
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" required>
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" name="categoria" required>
+
+            <label for="descripcion-corta">Descripción Corta:</label>
+            <input type="text" id="descripcion-corta" name="descripcion-corta" required>
+
+            <label for="descripcion-larga">Descripción Larga:</label>
+            <textarea id="descripcion-larga" name="descripcion-larga" required></textarea>
+
+            <label for="envio">Envío sin cargo:</label>
+            <input type="checkbox" id="envio" name="envio">
+
+            <label for="edad-desde">Edad Desde:</label>
+            <input type="number" id="edad-desde" name="edad-desde" required>
+
+            <label for="edad-hasta">Edad Hasta:</label>
+            <input type="number" id="edad-hasta" name="edad-hasta" required>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/ginavgtt/" target="_blank" rel="noopener noreferrer"><img src="../assets/img/instagram.png" alt="pagina de instagram de bjjwear"></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5493497687230&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img src="../assets/img/whatsapp.png" alt="contacto de whatsapp"></a>
+            <a href="https://www.google.com/maps/place/Santa+Fe+de+la+Vera+Cruz,+Santa+Fe/@-31.621945,-60.7449881,12z/data=!3m1!4b1!4m6!3m5!1s0x95b5a9adc40888e1:0xdcf7761e8d02804a!8m2!3d-31.6106578!4d-60.697294!16zL20vMDJ0YjQy?authuser=0&entry=ttu" target="_blank" rel="noopener noreferrer"><img src="../assets/img/ubicacion.png" alt="ubicacion de tienda fisica"></a>
+            <a href="mailto:ggvegetti@gmail.com" target="_blank" rel="noopener noreferrer"><img src="../assets/img/correo.png" alt="contacto de email"></a>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+    <script src="../js/alta.js"></script>
+</body>
+</html>
